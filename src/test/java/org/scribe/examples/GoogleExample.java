@@ -18,8 +18,10 @@ public class GoogleExample
   {
     OAuthService service = new ServiceBuilder()
                                   .provider(GoogleApi.class)
-                                  .apiKey("anonymous")
-                                  .apiSecret("anonymous")
+//                                  .apiKey("anonymous")
+//                                  .apiSecret("anonymous")
+                                  .apiKey("opensource.brickred.com")
+                                  .apiSecret("YC06FqhmCLWvtBg/O4W/aJfj")
                                   .scope(SCOPE)
                                   .build();
     Scanner in = new Scanner(System.in);
