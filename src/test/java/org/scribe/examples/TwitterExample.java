@@ -15,8 +15,9 @@ public class TwitterExample
   {
     OAuthService service = new ServiceBuilder()
                                 .provider(TwitterApi.class)
-                                .apiKey("6icbcAXyZx67r8uTAUM5Qw")
-                                .apiSecret("SCCAdUUc6LXxiazxH3N0QfpNUvlUy84mZ2XZKiv39s")
+                                .apiKey("BbCMOxb8v8pg3l3TrNQgOw")
+                                .apiSecret("iTzVNoG0srr5bQFqrwjqoINCPHPPMQksK4oUGbaKI")
+                                .callback("http://201.22.57.56:8080/avm/CallbackTwitter.seam")
                                 .build();
     Scanner in = new Scanner(System.in);
 
@@ -46,6 +47,7 @@ public class TwitterExample
     // Now let's go and ask for a protected resource!
     System.out.println("Now we're going to access a protected resource...");
     OAuthRequest request = new OAuthRequest(Verb.POST, PROTECTED_RESOURCE_URL);
+    //OAuthRequest request = new OAuthRequest(Verb.GET, PROTECTED_RESOURCE_URL);
     request.addBodyParameter("status", "this is sparta! *");
     service.signRequest(accessToken, request);
     Response response = request.send();

@@ -22,7 +22,7 @@ public class FacebookExample
                                   .provider(FacebookApi.class)
                                   .apiKey(apiKey)
                                   .apiSecret(apiSecret)
-                                  .callback("http://localhost:8080/socialauth-seam-demo/")
+                                  .callback("http://201.22.57.56:8080/avm/CallbackFacebook.seam")
                                   .debug()
                                   .build();
     Scanner in = new Scanner(System.in);
