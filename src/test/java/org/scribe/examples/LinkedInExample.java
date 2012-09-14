@@ -9,7 +9,13 @@ import org.scribe.oauth.*;
 
 public class LinkedInExample
 {
-  private static final String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people/~/connections:(id,last-name)";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people/~/connections:(id,last-name)";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people/~";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people/~?format=json";
+  private static final String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people/~:(id,first-name,last-name,headline,picture-url)";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people/~/connections";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people-search?keywords=Hacker"; 
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.linkedin.com/v1/people-search:(people,facets)?facet=location,us:84";  
   
   public static void main(String[] args)
   {
@@ -17,7 +23,7 @@ public class LinkedInExample
                                 .provider(LinkedInApi.class)
                                 .apiKey("d1s9hoj0srqc")
                                 .apiSecret("1dKdpNA5vuAkzky7")
-                                //.callback("http://201.22.57.56:8080/avm/CallbackLinkedIn.seam")
+                                .callback("http://201.22.57.56:8080/avm/CallbackLinkedIn.seam")
                                 .build();
     Scanner in = new Scanner(System.in);
     

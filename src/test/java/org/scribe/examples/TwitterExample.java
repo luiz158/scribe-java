@@ -9,7 +9,23 @@ import org.scribe.oauth.*;
 
 public class TwitterExample
 {
-  private static final String PROTECTED_RESOURCE_URL = "https://api.twitter.com/1/statuses/update.json";
+  //private static final String PROTECTED_RESOURCE_URL = "https://api.twitter.com/1/statuses/update.json";
+	// getting user profile
+	// /connect/twitter/profile
+	// /connect/twitter/friends
+	// /account/verify_credentials
+	// http://api.twitter.com/1/account/verify_credentials.format
+	// https://api.twitter.com/1/account/verify_credentials.json
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.twitter.com/1/account/verify_credentials.xml";
+  //private static final String PROTECTED_RESOURCE_URL = "https://api.twitter.com/1/users/show.json";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.twitter.com/1/users/show.json";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.twitter.com/1/connect/twitter/profile";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.twitter.com/version/users/show.xml";
+  //private static final String PROTECTED_RESOURCE_URL = "http://api.twitter.com/1/users/lookup.xml";
+  //private static final String PROTECTED_RESOURCE_URL = "https://api.twitter.com/1.1/account/verify_credentials.json";
+  //private static final String PROTECTED_RESOURCE_URL = "https://api.twitter.com/1.1/account/verify_credentials.json";
+  private static final String PROTECTED_RESOURCE_URL = "https://api.twitter.com/1/account/verify_credentials.json";
+  
   
   public static void main(String[] args)
   {
